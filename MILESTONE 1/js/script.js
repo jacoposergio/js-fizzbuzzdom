@@ -1,9 +1,5 @@
     
-const numbersContainer = document.querySelector('.numbers-container');
-
-for(let i = 0; i <= 100; i++) {
-    // Assegniamo ad una variabile il nome della classe per il colore
-    // Se multiplo di 3 fizz, di 5 buzz, di entrambi fizzbuzz 
+for(let i = 1; i <= 100; i++) {
     let threeFiveClassName;
     if(i % 5 === 0 && i % 3 === 0) {
         threeFiveClassName = 'fizzbuzz';
@@ -11,14 +7,9 @@ for(let i = 0; i <= 100; i++) {
         threeFiveClassName = 'fizz'
     } else if(i % 5 === 0 ){
         threeFiveClassName = 'buzz'
-    }
+    } 
+    console.log(i);
+    console.log(threeFiveClassName);
 
-    // Creare dei div box
-    const newBox = `<div class=" box ${threeFiveClassName}">${i}</div>`;
-
-    // Li concateniamo a numbersContainer
-    numbersContainer.innerHTML += newBox;
-
-  
 }
 
