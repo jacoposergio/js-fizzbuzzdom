@@ -3,7 +3,7 @@ const numbersContainer = document.querySelector('.numbers-container');
 
 for(let i = 0; i <= 100; i++) {
     // Assegniamo ad una variabile il nome della classe per il colore
-    // Se è pari .even, altrimenti .odd
+    // Se multiplo di 3 fizz, di 5 buzz, di entrambi fizzbuzz 
     let threeFiveClassName;
     if(i % 5 === 0 && i % 3 === 0) {
         threeFiveClassName = 'fizzbuzz';
